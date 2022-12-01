@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: automatic merge on approval
+    conditions:
+      - base=main
+      - "#approved-reviews-by>=0"
+      - label=default
+    actions:
+      merge:
+        method: merge
